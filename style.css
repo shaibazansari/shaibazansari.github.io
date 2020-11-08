@@ -546,6 +546,9 @@ input[type="submit"] {
     clip-path: none;
     padding: 10rem 0px;
   }
+	input, textarea {
+    width: 80%;
+}
 }
 
 @media screen and (min-width: 360px) and (max-width: 576px) {

@@ -546,6 +546,11 @@ input[type="submit"] {
     clip-path: none;
     padding: 10rem 0px;
   }
+
+  input, textarea {
+    width: 85%;
+    font-size: 1.6rem;
+  }
 }
 
 @media screen and (min-width: 360px) and (max-width: 576px) {
@@ -617,6 +622,12 @@ input[type="submit"] {
 
   #contact {
     clip-path: none;
+  }
+
+  input, textarea {
+    width: 85%;
+    font-size: 1.5rem;
+    letter-spacing: unset;
   }
 
   #contact {

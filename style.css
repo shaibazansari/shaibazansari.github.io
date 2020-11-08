@@ -98,13 +98,8 @@ p {
 }
 
 .cta-btn--hero {
-  /* background-image: linear-gradient(135deg, #02aab0, #00cdac);
-  -webkit-text-fill-color: transparent;
-  color: transparent; */
   border: 2px solid #02aab0;
   box-shadow: inset 0 0 0 0 #02aab0;
-  /* -webkit-transition: all ease 0.8s;
-	-moz-transition: all ease 0.8s; */
   transition: all ease 0.4s;
 }
 
@@ -515,10 +510,6 @@ input[type="submit"] {
     justify-content: center;
   }
 
-  /* #education .container{
-    max-width: 600px;
-  } */
-
   #education .edu-card-details {
     width: auto;
   }
@@ -619,6 +610,10 @@ input[type="submit"] {
   .project-wrapper__image img {
     height: auto !important;
   }
+	input, textarea {
+    width: 80%;
+}
+	
 
   #contact {
     clip-path: none;

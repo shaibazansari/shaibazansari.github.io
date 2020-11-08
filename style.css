@@ -614,6 +614,10 @@ input[type="submit"] {
   .project-wrapper__image img {
     height: auto !important;
   }
+	input, textarea {
+    width: 80%;
+}
+	
 
   #contact {
     clip-path: none;

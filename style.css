@@ -6,7 +6,7 @@
 
 html {
   font-size: 62.5%;
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -72,8 +72,12 @@ p {
 }
 
 @keyframes fadein {
-  from { opacity: 0}
-  to   { opacity: 1}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .text-color-main {
@@ -438,7 +442,7 @@ input[type="submit"] {
 }
 
 /****************** Media Queries ****************************/
-@media screen and (min-width: 768px) and (max-width: 1110px){
+@media screen and (min-width: 768px) and (max-width: 1110px) {
   #hero .hero-title {
     font-size: 3.8rem;
     font-weight: 700;
@@ -538,7 +542,8 @@ input[type="submit"] {
     padding: 10rem 0px;
   }
 
-  input, textarea {
+  input,
+  textarea {
     width: 85%;
     font-size: 1.6rem;
   }
@@ -564,6 +569,10 @@ input[type="submit"] {
 
   #about .about-wrapper__image {
     padding-bottom: 5rem;
+  }
+  .about-wrapper__image img {
+    /* height: auto; */
+    width: 75%;
   }
 
   #hero .hero-cta {
@@ -603,23 +612,20 @@ input[type="submit"] {
   .project-wrapper {
     margin-bottom: 10rem !important;
   }
-  .project-cards{
+  .project-cards {
     margin: 2.2rem !important;
   }
 
   .project-wrapper__image img {
     height: auto !important;
   }
-	input, textarea {
-    width: 80%;
-}
-	
 
   #contact {
     clip-path: none;
   }
 
-  input, textarea {
+  input,
+  textarea {
     width: 85%;
     font-size: 1.5rem;
     letter-spacing: unset;
@@ -632,8 +638,108 @@ input[type="submit"] {
   }
 }
 
-@media screen and (min-width: 1020px) and (max-width: 1110px){
-  .project-cards{
+@media screen and (min-width: 320px) and (max-width: 360px) {
+  #hero {
+    padding: 0px 1.6rem;
+  }
+  #hero .hero-title {
+    font-size: 3rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  #hero .hero-cta {
+    justify-content: center;
+  }
+
+  .section-title {
+    font-size: 2.8rem;
+    margin-bottom: 2.5rem;
+  }
+
+  #about {
+    clip-path: none;
+  }
+
+  #about .about-wrapper__image {
+    padding-bottom: 5rem;
+  }
+
+  .about-wrapper__image img {
+    /* height: auto; */
+    width: 80%;
+  }
+
+  #about .about-wrapper__info-text {
+    text-align: center;
+  }
+
+  .d-flex {
+    justify-content: center;
+  }
+
+  .edu-card-details {
+    padding: 40px;
+    margin: 18px 18px;
+    width: auto;
+  }
+
+  .edu-card-details i {
+    font-size: 2.5rem;
+  }
+
+  #education .edu-card-title {
+    font-size: 2rem;
+  }
+  #education .edu-card-name {
+    font-size: 1.4rem;
+  }
+
+  #projects {
+    margin-top: 0px;
+    padding-top: 5rem;
+  }
+
+  .project-wrapper {
+    margin-bottom: 8rem !important;
+  }
+
+  .project-cards {
+    margin: 2rem !important;
+  }
+
+  .project-wrapper__image img {
+    height: auto !important;
+  }
+
+  #projects p,a {
+    font-size: 1.45rem;
+  }
+
+  #projects .project-wrapper__text-title {
+    font-size: 2.1rem;
+  }
+
+  .project-wrapper__text a{
+    padding: 0.6rem 1.4rem;
+  }
+
+  #contact {
+    margin-top: 0px;
+    clip-path: none;
+    padding: 10rem 0px;
+  }
+
+  input,
+  textarea {
+    width: 85%;
+    font-size: 1.5rem;
+    letter-spacing: unset;
+  }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1110px) {
+  .project-cards {
     max-width: 450px;
   }
 }

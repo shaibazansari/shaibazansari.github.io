@@ -16,7 +16,7 @@
       content="BTl3EBbQb8zMfJdDpvmGaJrtm4VZoU44cJ5LQ9akFRU"
     />
     <title>Shaibaz Ansari | Developer</title>
-    <link rel="shortcut icon" type="image/png" href="./img/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
@@ -314,6 +314,7 @@
                 name="name"
                 id="name"
                 placeholder="John Doe"
+                aria-label="name"
                 required
               />
             </div>
@@ -323,6 +324,7 @@
                 name="email"
                 id="email"
                 placeholder="Johndoe@example.com"
+                aria-label="email"
                 required
               />
             </div>
@@ -333,6 +335,7 @@
                 cols="4"
                 rows="4"
                 placeholder="Message"
+                aria-label="message"
                 required
               ></textarea>
             </div>
@@ -358,6 +361,7 @@
             href="https://www.linkedin.com/in/shaibazansari/"
             target="_blank"
             rel="noreferrer"
+            aria-label="Linkedin"
           >
             <i class="fab fa-linkedin"></i>
           </a>
@@ -365,6 +369,7 @@
             href="https://github.com/shaibazansari"
             target="_blank"
             rel="noreferrer"
+            aria-label="Github"
           >
             <i class="fab fa-github"></i>
           </a>
@@ -372,17 +377,19 @@
             href="https://www.instagram.com/shaibaz__ansari/"
             target="_blank"
             rel="noreferrer"
+            aria-label="Instagram"
           >
             <i class="fab fa-instagram"></i>
           </a>
         </div>
         <hr />
         <p class="footer__text">
-          &copy; 2020 - Developed by
+          &copy; <span id="current-year">2020 </span>- Developed by
           <a
             href="https://github.com/shaibazansari"
             target="_blank"
             rel="noreferrer"
+            aria-label="Github"
             >Shaibaz Ansari</a
           >
         </p>

@@ -318,6 +318,9 @@ p {
 #projects .project-wrapper__text .pl a:hover {
   color: #fff;
 }
+.project-wrapper__text .pl{
+  margin: 0.5rem;
+}
 
 /* Contact Section */
 #contact {
@@ -706,6 +709,7 @@ input[type="submit"] {
 
   .project-cards {
     margin: 2rem !important;
+    padding: 1.3rem !important;
   }
 
   .project-wrapper__image img {
@@ -721,7 +725,7 @@ input[type="submit"] {
   }
 
   .project-wrapper__text a{
-    padding: 0.6rem 1.4rem;
+    padding: 0.6rem 1.2rem;
   }
 
   #contact {

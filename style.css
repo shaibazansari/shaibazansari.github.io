@@ -322,6 +322,11 @@ p {
   margin: 0.5rem;
 }
 
+.cta-btn-sc{
+  padding: 0;
+  margin: 0.8rem 1.6rem;
+}
+
 /* Contact Section */
 #contact {
   background-image: linear-gradient(135deg, #02aab0, #00cdac);
@@ -432,7 +437,7 @@ input[type="submit"] {
 .footer__text,
 .footer__text a {
   color: grey;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 @keyframes slideInFromLeft {

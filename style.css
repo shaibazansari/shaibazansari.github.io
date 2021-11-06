@@ -138,8 +138,9 @@ p {
 }
 
 #about .about__image-wrap{
-  height: auto;
-  width: auto;
+  height: 350px;
+  width: 350px;
+  margin: 0 auto;
 }
 
 #about .about__image{
@@ -503,11 +504,6 @@ input[type="submit"] {
     padding-right: 2.15rem;
   }
 
-  #about .about__image-wrap img {
-    /* height: auto; */
-    width: 70%;
-  }
-
   .edu-card-details {
     width: auto;
   }
@@ -557,8 +553,10 @@ input[type="submit"] {
     clip-path: none;
   }
 
-  #about .about__image-wrap {
-    padding-bottom: 6.4rem;
+  #about .about__image-wrap{
+    height: 320px;
+    width: 320px;
+    margin-bottom: 5rem;
   }
 
   #about .about__text {
@@ -618,12 +616,10 @@ input[type="submit"] {
     clip-path: none;
   }
 
-  #about .about__image-wrap {
-    padding-bottom: 5rem;
-  }
-  #about .about__image {
-    /* height: auto; */
-    width: 75%;
+  #about .about__image-wrap{
+    height: 300px;
+    width: 300px;
+    margin-bottom: 3.5rem;
   }
 
   #hero .hero-cta {
@@ -708,13 +704,10 @@ input[type="submit"] {
     clip-path: none;
   }
 
-  #about .about__image-wrap {
-    padding-bottom: 5rem;
-  }
-
-  #about .about__image{
-    /* height: auto; */
-    width: 80%;
+  #about .about__image-wrap{
+    height: 280px;
+    width: 280px;
+    margin-bottom: 3rem;
   }
 
   #about .about__text {

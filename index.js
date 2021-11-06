@@ -21,10 +21,6 @@ $(document).ready(function () {
     });
 });
 
-function insertAfter(referenceNode, newNode) {
-    referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
-}
-
 const sendMail = (e) => {
     e.preventDefault()
     const service_id = 'service_mxyxw4l';
@@ -32,35 +28,34 @@ const sendMail = (e) => {
     let name = document.getElementById("name");
     let email = document.getElementById("email");
     let message = document.getElementById("message");
-    let ele = document.getElementById("sbmessage")
-    let submitMessage = document.createElement("span");
+    let submitStatus = document.querySelector(".submit-status");
 
-    console.log(name, email, message)
     let template_params = {
         name: name.value,
         reply_email: email.value,
         message: message.value
     };
+
     emailjs.init("user_16stRbuVzdakbVSSIzqOY");
     emailjs.send(service_id, template_id, template_params)
         .then(function (response) {
             console.log('SUCCESS!', response.status, response.text);
-            submitMessage.classList.add('submit-message', 'success')
-            submitMessage.innerText = "Your Response Has been submited"
-            insertAfter(ele, submitMessage);
-            setTimeout(() => {
-                document.querySelector(".submit-message").remove();
+            submitStatus.classList.add('success')
+            submitStatus.innerHTML = "Your Response Has been submited"
+            setTimeout(function (){
+                submitStatus.innerHTML = ''
+                submitStatus.classList.remove('success')
             }, 3000);
 
         }, function (error) {
             console.log('FAILED...', error);
-            submitMessage.classList.add('submit-message', 'error')
-            submitMessage.innerText = "Due to some Error Your Response cannot be submited. Try again later"
-            insertAfter(ele, submitMessage);
-            setTimeout(() => {
-                document.querySelector(".submit-message").remove();
+            submitStatus.classList.add('error')
+            submitStatus.innerHTML = "Due to some Error Your Response cannot be submited.<br>Please Try again later"
+            setTimeout(function() {
+                submitStatus.innerHTML = ''
+                submitStatus.classList.remove('error')
             }, 3000);
-        });;
+        });
         name.value = ""
         email.value = ""
         message.value = ""

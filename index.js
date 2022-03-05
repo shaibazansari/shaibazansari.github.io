@@ -3,10 +3,9 @@ $(document).ready(function () {
     $('#current-year').text(new Date().getFullYear())
 
     $(".owl-carousel").owlCarousel({
-        autoplay: true,
+        autoplay: false,
         items: 2,
         // autoplayTimeout: 10000, //2000ms = 2s;
-        autoplayHoverPause: true,
         responsive:{
             0:{
                 items:1,

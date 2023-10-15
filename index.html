@@ -9,14 +9,14 @@
     content="Shaibaz Ansari | Full Stack Web Developer from Mumbai. I'm currently working as a web developer" />
     <meta name="google-site-verification" content="YDL7-zgygeJIgBn40Pmey85zCdPesUJly0dJ2duEQBY" />
   <title>Shaibaz Ansari | Developer</title>
-  <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="preload" as="style" />
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
@@ -42,7 +42,7 @@
       <div class="row about-wrapper">
         <div class="col">
           <div class="about__image-wrap">
-            <img class="about__image" src="./images/profile.png" alt="Profile Image" />
+            <img class="about__image" src="./assets/images/profile.png" alt="Profile Image" />
           </div>
         </div>
         <div class="col">
@@ -92,7 +92,7 @@
         <div class="education-row slider owl-carousel owl-theme">
           <div class="edu-card-details bg-color-light edu-card-shadow slide">
             <div class="icon edu-icon">
-              <img src="./images/graduation-cap.svg" alt="">
+              <img src="./assets/images/graduation-cap.svg" alt="">
             </div>
             <h3 class="edu-card-title">Rizvi College of Engineering</h3>
             <p class="edu-card-name mb-1">Bachelor of Engineering</p>
@@ -100,7 +100,7 @@
           </div>
           <div class="edu-card-details bg-color-light edu-card-shadow slide">
             <div class="icon edu-icon">
-              <img src="./images/graduation-cap.svg" alt="">
+              <img src="./assets/images/graduation-cap.svg" alt="">
             </div>
             <h3 class="edu-card-title">Shri T.P Bhatia College</h3>
             <p class="edu-card-name mb-1">Higher Secondary Certificate</p>
@@ -108,7 +108,7 @@
           </div>
           <div class="edu-card-details bg-color-light edu-card-shadow slide">
             <div class="icon edu-icon">
-              <img src="./images/graduation-cap.svg" alt="">
+              <img src="./assets/images/graduation-cap.svg" alt="">
             </div>
             <h3 class="edu-card-title">St. Theresa High School</h3>
             <p class="edu-card-name mb-1">Secondary School Certificate</p>
@@ -129,7 +129,7 @@
           <!-- Each .row is a project -->
           <div class="project-cards">
             <div class="project__image-wrap">
-              <img class="project__image" src="./images/placeprep.jpg" alt="PlacePrep img" loading="lazy" />
+              <img class="project__image" src="./assets/images/placeprep.jpg" alt="PlacePrep img" loading="lazy" />
             </div>
             <div class="project__content">
               <h3 class="project__title">PlacePrep</h3>
@@ -154,7 +154,7 @@
           </div>
           <div class="project-cards">
             <div class="project__image-wrap">
-              <img class="project__image" src="./images/cricketscorer.jpg" alt="Cricket scorer img" loading="lazy" />
+              <img class="project__image" src="./assets/images/cricketscorer.jpg" alt="Cricket scorer img" loading="lazy" />
             </div>
             <div class="project__content">
               <h3 class="project__title">Cricket Scorer</h3>
@@ -180,7 +180,7 @@
           </div>
           <div class="project-cards">
             <div class="project__image-wrap">
-              <img class="project__image" src="./images/contactkeeper.jpg" alt="Contact Keeper img" loading="lazy" />
+              <img class="project__image" src="./assets/images/contactkeeper.jpg" alt="Contact Keeper img" loading="lazy" />
             </div>
             <div class="project__content">
               <h3 class="project__title">Contact Keeper</h3>
@@ -206,7 +206,7 @@
           </div>
           <div class="project-cards">
             <div class="project__image-wrap">
-              <img class="project__image" src="./images/billgenerator.jpg" alt="Bill Generator img" loading="lazy" />
+              <img class="project__image" src="./assets/images/billgenerator.jpg" alt="Bill Generator img" loading="lazy" />
             </div>
             <div class="project__content">
               <h3 class="project__title">Bill Generator</h3>
@@ -241,7 +241,7 @@
     <div class="container">
       <h2 class="section-title">Contact</h2>
       <div class="contact-wrapper">
-        <form onsubmit="sendMail(event)" method="POST">
+        <form id="contact-form">
           <div class="form-group">
             <input type="text" name="name" id="name" placeholder="John Doe" aria-label="name" required />
           </div>
@@ -264,23 +264,23 @@
     <div class="container">
       <div class="icon top-icon">
         <a href="#top" class="back-to-top" id="top-btn" aria-label="back-to-top">
-          <img src="./images/chevron-up.svg" alt="">
+          <img src="./assets/images/chevron-up.svg" alt="">
         </a>
       </div>
       <div class="social-links">
         <div class="icon">
           <a href="https://www.linkedin.com/in/shaibazansari/" target="_blank" rel="noreferrer" aria-label="Linkedin">
-            <img src="./images/linkedin.svg" alt="linkedin icon">
+            <img src="./assets/images/linkedin.svg" alt="linkedin icon">
           </a>
         </div>
         <div class="icon">
           <a href="https://github.com/shaibazansari" target="_blank" rel="noreferrer" aria-label="Github">
-            <img src="./images/github.svg" alt="github icon">
+            <img src="./assets/images/github.svg" alt="github icon">
           </a>
         </div>
         <div class="icon">
           <a href="https://www.instagram.com/shaibaz__ansari/" target="_blank" rel="noreferrer" aria-label="Instagram">
-            <img src="./images/instagram.svg" alt="instagram icon">
+            <img src="./assets/images/instagram.svg" alt="instagram icon">
           </a>
         </div>
       </div>
@@ -292,8 +292,8 @@
       </p>
     </div>
   </footer>
-  <script src="index.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

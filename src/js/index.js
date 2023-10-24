@@ -43,7 +43,7 @@ $(document).ready(function () {
     };
 
     sendMail(templateParams);
-  }
+  } 
 
   function sendMail(params) {
     emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, params).then(

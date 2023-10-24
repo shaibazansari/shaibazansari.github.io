@@ -20,8 +20,8 @@ $(document).ready(function () {
   });
 
   const EMAILJS_PUBLIC_KEY = "pLykhmhHSIKqS9_gJ";
-  const EMAILJS_SERVICE_ID = "2adf1c30-d16b-4839-b21a-17fee85822e8";
-  const EMAILJS_TEMPLATE_ID = "76259be0-c87e-4bfe-9906-df4e88621f81";
+  const EMAILJS_SERVICE_ID = "2adf1c30-d16b-4839-b21a";
+  const EMAILJS_TEMPLATE_ID = "76259be0-c87e-4bfe-9906";
 
   emailjs.init(EMAILJS_PUBLIC_KEY);
 
@@ -43,10 +43,6 @@ $(document).ready(function () {
     };
 
     sendMail(templateParams);
-
-    name.value = "";
-    email.value = "";
-    message.value = "";
   }
 
   function sendMail(params) {
@@ -66,6 +62,7 @@ $(document).ready(function () {
   }
 
   function setAlert(status, message) {
+    clearForm()
     submitStatus.classList.add(status);
     submitStatus.innerHTML = message;
     removeAlert(status);
@@ -76,5 +73,11 @@ $(document).ready(function () {
       submitStatus.innerHTML = "";
       submitStatus.classList.remove(status);
     }, 3000);
+  }
+
+  function clearForm() {
+    name.value = "";
+    email.value = "";
+    message.value = "";
   }
 });
